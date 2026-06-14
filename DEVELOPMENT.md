@@ -390,3 +390,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Coherency checks update all levels.
 - **Status**: Verified & Integrated successfully.
 
+### Log #106: docs(cache): detail write-through and write-back policies
+- **Summary**: Added specs explanation sheet.
+- **Status**: Verified & Integrated successfully.
+
