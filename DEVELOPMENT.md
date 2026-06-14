@@ -250,3 +250,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Eraser button now clears whole 32x32 array.
 - **Status**: Verified & Integrated successfully.
 
+### Log #71: style(pixel): highlight active drawing color palette swatches
+- **Summary**: White borders added to active color circles.
+- **Status**: Verified & Integrated successfully.
+
