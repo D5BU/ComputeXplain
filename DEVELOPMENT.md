@@ -266,3 +266,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added progressive scan raster notes.
 - **Status**: Verified & Integrated successfully.
 
+### Log #75: perf(pixel): simplify color distance calculations in 4-bit
+- **Summary**: Optimized RGB distance checking formulas.
+- **Status**: Verified & Integrated successfully.
+
