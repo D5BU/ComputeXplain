@@ -210,3 +210,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Supported 256 colors quantization mapping.
 - **Status**: Verified & Integrated successfully.
 
+### Log #61: feat(pixel): add 4-bit Retro Palette color compressor
+- **Summary**: Supported 16 colors quantization mapping.
+- **Status**: Verified & Integrated successfully.
+
