@@ -66,3 +66,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: All routing events are now logged with timestamps.
 - **Status**: Verified & Integrated successfully.
 
+### Log #25: fix(network): handle out-of-order packet reassembly offsets
+- **Summary**: Fixed offset issues when packet 3 arrives before packet 1.
+- **Status**: Verified & Integrated successfully.
+
