@@ -6,3 +6,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Network path search optimized for faster calculations.
 - **Status**: Verified & Integrated successfully.
 
+### Log #10: feat(network): add customizable packet loss ratios in gateway
+- **Summary**: Gateway now supports custom packet drop rates from UI.
+- **Status**: Verified & Integrated successfully.
+
