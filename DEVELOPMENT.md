@@ -130,3 +130,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Documented the supported 8-bit instruction set.
 - **Status**: Verified & Integrated successfully.
 
+### Log #41: test(cpu): verify ALU math outputs for positive integers
+- **Summary**: Wrote assertion tests for ADD and SUB routines.
+- **Status**: Verified & Integrated successfully.
+
