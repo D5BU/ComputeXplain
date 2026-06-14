@@ -18,3 +18,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Verified DNS mock server latency parameters.
 - **Status**: Verified & Integrated successfully.
 
+### Log #13: style(network): enhance visual glow on active router hops
+- **Summary**: Fitted neon color shadows on nodes with active canvas pulses.
+- **Status**: Verified & Integrated successfully.
+
