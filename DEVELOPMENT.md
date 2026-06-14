@@ -294,3 +294,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Cleaned up event checking in depthSelect.
 - **Status**: Verified & Integrated successfully.
 
+### Log #82: fix(pixel): prevent canvas pixel offsets drift on drag
+- **Summary**: Coordinate math is aligned with canvas scales.
+- **Status**: Verified & Integrated successfully.
+
