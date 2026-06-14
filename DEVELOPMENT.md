@@ -54,3 +54,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Mouse turns to pointer when hovering routers.
 - **Status**: Verified & Integrated successfully.
 
+### Log #22: test(network): unit test TCP payload segmenting boundaries
+- **Summary**: Verified that 3-character splitting works for all lengths.
+- **Status**: Verified & Integrated successfully.
+
