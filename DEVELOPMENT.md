@@ -330,3 +330,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Cache specs documented in detail.
 - **Status**: Verified & Integrated successfully.
 
+### Log #91: test(cache): assert direct map index collision overrides
+- **Summary**: Verified cache line replacement policies.
+- **Status**: Verified & Integrated successfully.
+
