@@ -274,3 +274,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Visual sweep line draws over active cells.
 - **Status**: Verified & Integrated successfully.
 
+### Log #77: style(pixel): center drawing and microscope blocks in grid
+- **Summary**: Layout improvements in pixel tab.
+- **Status**: Verified & Integrated successfully.
+
