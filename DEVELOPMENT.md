@@ -10,3 +10,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Gateway now supports custom packet drop rates from UI.
 - **Status**: Verified & Integrated successfully.
 
+### Log #11: docs(network): explain TCP congestion window expansion models
+- **Summary**: Added details about TCP slide windows to docs.
+- **Status**: Verified & Integrated successfully.
+
