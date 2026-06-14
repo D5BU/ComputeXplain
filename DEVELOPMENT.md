@@ -154,3 +154,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: ALU clears output values during preset resets.
 - **Status**: Verified & Integrated successfully.
 
+### Log #47: docs(cpu): explain Branch-if-Zero assembly logic patterns
+- **Summary**: Documented JZ instruction logic flow.
+- **Status**: Verified & Integrated successfully.
+
