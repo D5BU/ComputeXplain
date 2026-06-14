@@ -14,3 +14,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added details about TCP slide windows to docs.
 - **Status**: Verified & Integrated successfully.
 
+### Log #12: test(network): write integration test for DNS response time
+- **Summary**: Verified DNS mock server latency parameters.
+- **Status**: Verified & Integrated successfully.
+
