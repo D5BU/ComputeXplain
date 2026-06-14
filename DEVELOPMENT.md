@@ -158,3 +158,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Documented JZ instruction logic flow.
 - **Status**: Verified & Integrated successfully.
 
+### Log #48: style(cpu): use monospace font for memory addresses
+- **Summary**: RAM rendering utilizes JetBrains Mono font.
+- **Status**: Verified & Integrated successfully.
+
