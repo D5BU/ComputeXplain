@@ -70,3 +70,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Fixed offset issues when packet 3 arrives before packet 1.
 - **Status**: Verified & Integrated successfully.
 
+### Log #26: docs(network): describe TCP handshake protocol simulation steps
+- **Summary**: Handshake visual steps are documented.
+- **Status**: Verified & Integrated successfully.
+
