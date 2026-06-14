@@ -346,3 +346,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Active address cell flashes yellow.
 - **Status**: Verified & Integrated successfully.
 
+### Log #95: refactor(cache): clean up cache line row creation helpers
+- **Summary**: Refactored SVG row rendering text offsets.
+- **Status**: Verified & Integrated successfully.
+
