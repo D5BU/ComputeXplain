@@ -402,3 +402,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Verified LRU/direct eviction stability.
 - **Status**: Verified & Integrated successfully.
 
+### Log #109: chore(cache): clean up cache-sim.js code comments
+- **Summary**: Added comments explaining index % formulas.
+- **Status**: Verified & Integrated successfully.
+
