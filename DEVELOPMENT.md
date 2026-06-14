@@ -106,3 +106,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added multiplication loop assembly preset.
 - **Status**: Verified & Integrated successfully.
 
+### Log #35: feat(cpu): add Factorial calculator program preset
+- **Summary**: Added factorial loop assembly preset.
+- **Status**: Verified & Integrated successfully.
+
