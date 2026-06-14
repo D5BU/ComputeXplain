@@ -362,3 +362,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Refreshed only matching rows on transitions.
 - **Status**: Verified & Integrated successfully.
 
+### Log #99: feat(cache): display hit rate percentage in stats window
+- **Summary**: Hit rate counter matches total requests.
+- **Status**: Verified & Integrated successfully.
+
