@@ -326,3 +326,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Evicted blocks update tags properly.
 - **Status**: Verified & Integrated successfully.
 
+### Log #90: docs(cache): explain L1, L2, L3 cache memory latencies
+- **Summary**: Cache specs documented in detail.
+- **Status**: Verified & Integrated successfully.
+
