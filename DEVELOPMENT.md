@@ -186,3 +186,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: RAM cells aligned left in SVG frame.
 - **Status**: Verified & Integrated successfully.
 
+### Log #55: refactor(cpu): extract opcode mappings to enum structure
+- **Summary**: Unified operational code words.
+- **Status**: Verified & Integrated successfully.
+
