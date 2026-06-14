@@ -374,3 +374,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Verified cache hits increase on local blocks.
 - **Status**: Verified & Integrated successfully.
 
+### Log #102: chore(cache): restrict address range to 0x00 - 0x7F
+- **Summary**: Input validation is completed.
+- **Status**: Verified & Integrated successfully.
+
