@@ -170,3 +170,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Speed up dashboard SVG line dashes.
 - **Status**: Verified & Integrated successfully.
 
+### Log #51: feat(cpu): add manual step execution button controllers
+- **Summary**: User can click step button for diagnostic trace.
+- **Status**: Verified & Integrated successfully.
+
