@@ -314,3 +314,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Direct mapped cache index checking completed.
 - **Status**: Verified & Integrated successfully.
 
+### Log #87: style(cache): color code cache hit types in display
+- **Summary**: L1 green, L2 cyan, L3 purple, RAM amber.
+- **Status**: Verified & Integrated successfully.
+
