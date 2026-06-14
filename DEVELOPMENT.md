@@ -262,3 +262,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Drawing stops instantly when click is released.
 - **Status**: Verified & Integrated successfully.
 
+### Log #74: docs(pixel): document electron gun CRT scanning patterns
+- **Summary**: Added progressive scan raster notes.
+- **Status**: Verified & Integrated successfully.
+
