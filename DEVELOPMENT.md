@@ -30,3 +30,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Resolved cyclic routing loops in network graph.
 - **Status**: Verified & Integrated successfully.
 
+### Log #16: chore(network): document DNS server mock IP mapping parameters
+- **Summary**: Described the 8.8.8.8 and 1.1.1.1 DNS resolutions.
+- **Status**: Verified & Integrated successfully.
+
