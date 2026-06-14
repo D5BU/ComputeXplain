@@ -150,3 +150,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Consolidated ACC, B, and IR register rendering.
 - **Status**: Verified & Integrated successfully.
 
+### Log #46: fix(cpu): reset ALU display values on program select change
+- **Summary**: ALU clears output values during preset resets.
+- **Status**: Verified & Integrated successfully.
+
