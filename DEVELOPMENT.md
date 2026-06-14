@@ -398,3 +398,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Visual connections flash green on success.
 - **Status**: Verified & Integrated successfully.
 
+### Log #108: test(cache): check eviction triggers under memory pressure
+- **Summary**: Verified LRU/direct eviction stability.
+- **Status**: Verified & Integrated successfully.
+
