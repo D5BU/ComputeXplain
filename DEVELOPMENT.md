@@ -382,3 +382,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Hits and misses logged in detail.
 - **Status**: Verified & Integrated successfully.
 
+### Log #104: refactor(cache): extract L1/L2/L3 parameters to config
+- **Summary**: Centralized latency constants.
+- **Status**: Verified & Integrated successfully.
+
