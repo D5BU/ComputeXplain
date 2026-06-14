@@ -242,3 +242,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Verified color quantization mappings.
 - **Status**: Verified & Integrated successfully.
 
+### Log #69: chore(pixel): tweak drawing canvas cursor hover pointer styles
+- **Summary**: Mouse turns to crosshair over drawing grids.
+- **Status**: Verified & Integrated successfully.
+
