@@ -246,3 +246,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Mouse turns to crosshair over drawing grids.
 - **Status**: Verified & Integrated successfully.
 
+### Log #70: feat(pixel): clear drawing canvas framebuffer completely
+- **Summary**: Eraser button now clears whole 32x32 array.
+- **Status**: Verified & Integrated successfully.
+
