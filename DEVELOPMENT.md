@@ -74,3 +74,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Handshake visual steps are documented.
 - **Status**: Verified & Integrated successfully.
 
+### Log #27: style(network): dim offline routers visually in network tree
+- **Summary**: Dashed lines and red accents for congested links.
+- **Status**: Verified & Integrated successfully.
+
