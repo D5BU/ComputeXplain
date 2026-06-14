@@ -394,3 +394,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added specs explanation sheet.
 - **Status**: Verified & Integrated successfully.
 
+### Log #107: style(cache): add glow on cache hit routing connectors
+- **Summary**: Visual connections flash green on success.
+- **Status**: Verified & Integrated successfully.
+
