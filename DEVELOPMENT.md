@@ -298,3 +298,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Coordinate math is aligned with canvas scales.
 - **Status**: Verified & Integrated successfully.
 
+### Log #83: docs(pixel): draft screen refresh rates explanation logs
+- **Summary**: Raster scan theory document completed.
+- **Status**: Verified & Integrated successfully.
+
