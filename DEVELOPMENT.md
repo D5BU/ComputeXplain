@@ -386,3 +386,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Centralized latency constants.
 - **Status**: Verified & Integrated successfully.
 
+### Log #105: fix(cache): update cache coherency lines on write through
+- **Summary**: Coherency checks update all levels.
+- **Status**: Verified & Integrated successfully.
+
