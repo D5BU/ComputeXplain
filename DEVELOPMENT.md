@@ -290,3 +290,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Continuous drawing is now active on drag.
 - **Status**: Verified & Integrated successfully.
 
+### Log #81: refactor(pixel): simplify color depth selectors logic
+- **Summary**: Cleaned up event checking in depthSelect.
+- **Status**: Verified & Integrated successfully.
+
