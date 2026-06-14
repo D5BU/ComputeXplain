@@ -322,3 +322,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Line sweeps now run at normal speeds.
 - **Status**: Verified & Integrated successfully.
 
+### Log #89: fix(cache): resolve cache collision index eviction leaks
+- **Summary**: Evicted blocks update tags properly.
+- **Status**: Verified & Integrated successfully.
+
