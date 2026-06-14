@@ -94,3 +94,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Normalized node declarations into coordinate definitions.
 - **Status**: Verified & Integrated successfully.
 
+### Log #32: fix(network): clear routing arrays on reset trigger click
+- **Summary**: Flushed active packets lists during manual reset.
+- **Status**: Verified & Integrated successfully.
+
