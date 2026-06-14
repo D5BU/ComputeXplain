@@ -358,3 +358,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added cache locality notes.
 - **Status**: Verified & Integrated successfully.
 
+### Log #98: perf(cache): optimize SVG canvas redraw bounds
+- **Summary**: Refreshed only matching rows on transitions.
+- **Status**: Verified & Integrated successfully.
+
