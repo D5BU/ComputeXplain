@@ -342,3 +342,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Write-through policy updating RAM is active.
 - **Status**: Verified & Integrated successfully.
 
+### Log #94: style(cache): highlight requested RAM cell in visual stack
+- **Summary**: Active address cell flashes yellow.
+- **Status**: Verified & Integrated successfully.
+
