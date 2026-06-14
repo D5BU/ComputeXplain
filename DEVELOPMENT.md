@@ -366,3 +366,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Hit rate counter matches total requests.
 - **Status**: Verified & Integrated successfully.
 
+### Log #100: style(cache): align cache level labels on SVG layout
+- **Summary**: Cleaned up L1/L2/L3 alignment grids.
+- **Status**: Verified & Integrated successfully.
+
