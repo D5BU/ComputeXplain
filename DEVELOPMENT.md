@@ -126,3 +126,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Checked bound offsets on PC increment.
 - **Status**: Verified & Integrated successfully.
 
+### Log #40: docs(cpu): detail opcode mnemonics LOAD, STORE, ADD, SUB
+- **Summary**: Documented the supported 8-bit instruction set.
+- **Status**: Verified & Integrated successfully.
+
