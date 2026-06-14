@@ -114,3 +114,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Clean separation of fetch and decode logic in cpu-sim.js.
 - **Status**: Verified & Integrated successfully.
 
+### Log #37: style(cpu): light up active registers in purple during execute
+- **Summary**: Registers flash during execution step.
+- **Status**: Verified & Integrated successfully.
+
