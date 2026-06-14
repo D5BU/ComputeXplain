@@ -194,3 +194,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: CPU halts if encountering non-object in code RAM cells.
 - **Status**: Verified & Integrated successfully.
 
+### Log #57: chore(cpu): adjust initial registers display offsets in SVG
+- **Summary**: Corrected Y coordinate alignment for IR and PC.
+- **Status**: Verified & Integrated successfully.
+
