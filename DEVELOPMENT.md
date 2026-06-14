@@ -354,3 +354,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Address input validates hex strings.
 - **Status**: Verified & Integrated successfully.
 
+### Log #97: docs(cache): document spatial and temporal memory localities
+- **Summary**: Added cache locality notes.
+- **Status**: Verified & Integrated successfully.
+
