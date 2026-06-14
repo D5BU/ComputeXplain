@@ -318,3 +318,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: L1 green, L2 cyan, L3 purple, RAM amber.
 - **Status**: Verified & Integrated successfully.
 
+### Log #88: perf(cache): throttle cache hierarchy routing animations
+- **Summary**: Line sweeps now run at normal speeds.
+- **Status**: Verified & Integrated successfully.
+
