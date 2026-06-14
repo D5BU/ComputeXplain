@@ -118,3 +118,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Registers flash during execution step.
 - **Status**: Verified & Integrated successfully.
 
+### Log #38: perf(cpu): throttle SVG animations to save CPU power
+- **Summary**: Reduced DOM repaints in CPU visualizer.
+- **Status**: Verified & Integrated successfully.
+
