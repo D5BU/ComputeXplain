@@ -222,3 +222,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Optimized drawing speed for microscope canvas.
 - **Status**: Verified & Integrated successfully.
 
+### Log #64: style(pixel): add glass border design on microscope canvas
+- **Summary**: Fitted microscope with glowing border frame.
+- **Status**: Verified & Integrated successfully.
+
