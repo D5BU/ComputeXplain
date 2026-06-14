@@ -138,3 +138,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Adjusted slider bounds to 1Hz - 10Hz.
 - **Status**: Verified & Integrated successfully.
 
+### Log #43: feat(cpu): print decoded instruction assembly structure
+- **Summary**: Prints human readable opcode details to logs.
+- **Status**: Verified & Integrated successfully.
+
