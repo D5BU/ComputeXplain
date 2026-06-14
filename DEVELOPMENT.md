@@ -198,3 +198,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Corrected Y coordinate alignment for IR and PC.
 - **Status**: Verified & Integrated successfully.
 
+### Log #58: feat(cpu): log register trace updates in system feed
+- **Summary**: Console lists changes on ACC and register B values.
+- **Status**: Verified & Integrated successfully.
+
