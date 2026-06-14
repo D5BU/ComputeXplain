@@ -270,3 +270,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Optimized RGB distance checking formulas.
 - **Status**: Verified & Integrated successfully.
 
+### Log #76: feat(pixel): draw raster scanline sweep over image grid
+- **Summary**: Visual sweep line draws over active cells.
+- **Status**: Verified & Integrated successfully.
+
