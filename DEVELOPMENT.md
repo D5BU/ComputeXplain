@@ -38,3 +38,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Number labels added to flying packet nodes.
 - **Status**: Verified & Integrated successfully.
 
+### Log #18: refactor(network): modularize hop calculation algorithms
+- **Summary**: Split Dijktra path finder into reusable functions.
+- **Status**: Verified & Integrated successfully.
+
