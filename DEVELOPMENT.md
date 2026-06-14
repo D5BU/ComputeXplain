@@ -226,3 +226,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Fitted microscope with glowing border frame.
 - **Status**: Verified & Integrated successfully.
 
+### Log #65: perf(pixel): redraw microscope only on pixel value changes
+- **Summary**: Reduces paint rates on mouse movements.
+- **Status**: Verified & Integrated successfully.
+
