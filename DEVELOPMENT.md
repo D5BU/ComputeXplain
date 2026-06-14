@@ -370,3 +370,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Cleaned up L1/L2/L3 alignment grids.
 - **Status**: Verified & Integrated successfully.
 
+### Log #101: test(cache): run simulated spatial locality access tests
+- **Summary**: Verified cache hits increase on local blocks.
+- **Status**: Verified & Integrated successfully.
+
