@@ -110,3 +110,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added factorial loop assembly preset.
 - **Status**: Verified & Integrated successfully.
 
+### Log #36: refactor(cpu): isolate instruction fetch and decode cycles
+- **Summary**: Clean separation of fetch and decode logic in cpu-sim.js.
+- **Status**: Verified & Integrated successfully.
+
