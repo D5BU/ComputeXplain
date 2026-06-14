@@ -174,3 +174,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: User can click step button for diagnostic trace.
 - **Status**: Verified & Integrated successfully.
 
+### Log #52: fix(cpu): update Accumulator display on arithmetic writeback
+- **Summary**: ACC updates values immediately after math executions.
+- **Status**: Verified & Integrated successfully.
+
