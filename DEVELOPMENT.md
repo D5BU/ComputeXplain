@@ -350,3 +350,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Refactored SVG row rendering text offsets.
 - **Status**: Verified & Integrated successfully.
 
+### Log #96: fix(cache): restrict cache read address entries to hex format
+- **Summary**: Address input validates hex strings.
+- **Status**: Verified & Integrated successfully.
+
