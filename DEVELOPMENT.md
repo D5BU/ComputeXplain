@@ -22,3 +22,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Fitted neon color shadows on nodes with active canvas pulses.
 - **Status**: Verified & Integrated successfully.
 
+### Log #14: perf(network): throttle canvas redraw cycles during congestion
+- **Summary**: Reduces repaint rates under high load.
+- **Status**: Verified & Integrated successfully.
+
