@@ -278,3 +278,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Layout improvements in pixel tab.
 - **Status**: Verified & Integrated successfully.
 
+### Log #78: test(pixel): check subpixel luminance values on mono settings
+- **Summary**: Verified relative luminance formulas.
+- **Status**: Verified & Integrated successfully.
+
