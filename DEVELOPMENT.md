@@ -82,3 +82,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Tested retransmission threshold boundaries.
 - **Status**: Verified & Integrated successfully.
 
+### Log #29: chore(network): update DNS lookup host mapping dictionary keys
+- **Summary**: Added custom URLs like github.com and wikipedia.org.
+- **Status**: Verified & Integrated successfully.
+
