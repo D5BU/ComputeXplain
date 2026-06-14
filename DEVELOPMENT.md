@@ -234,3 +234,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Checked boundaries on canvas grid hover.
 - **Status**: Verified & Integrated successfully.
 
+### Log #67: docs(pixel): explain subpixel additive RGB color mixing
+- **Summary**: Documented how monitors represent colors.
+- **Status**: Verified & Integrated successfully.
+
