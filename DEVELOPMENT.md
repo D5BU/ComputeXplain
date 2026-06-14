@@ -178,3 +178,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: ACC updates values immediately after math executions.
 - **Status**: Verified & Integrated successfully.
 
+### Log #53: docs(cpu): layout fetch-decode-execute-writeback stages
+- **Summary**: Added pipeline stages chart to code files.
+- **Status**: Verified & Integrated successfully.
+
