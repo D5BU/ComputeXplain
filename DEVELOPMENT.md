@@ -46,3 +46,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: TCP retry starts immediately if destination path is broken.
 - **Status**: Verified & Integrated successfully.
 
+### Log #20: docs(network): clarify TCP packet sequence number reassembly
+- **Summary**: Added details about buffer indexing inside index.html.
+- **Status**: Verified & Integrated successfully.
+
