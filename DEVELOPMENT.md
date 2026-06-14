@@ -310,3 +310,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Average access latency tracking formula implemented.
 - **Status**: Verified & Integrated successfully.
 
+### Log #86: refactor(cache): split addresses to index and tag headers
+- **Summary**: Direct mapped cache index checking completed.
+- **Status**: Verified & Integrated successfully.
+
