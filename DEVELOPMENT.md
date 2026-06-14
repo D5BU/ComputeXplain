@@ -50,3 +50,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Added details about buffer indexing inside index.html.
 - **Status**: Verified & Integrated successfully.
 
+### Log #21: style(network): set cursor hover change on active network nodes
+- **Summary**: Mouse turns to pointer when hovering routers.
+- **Status**: Verified & Integrated successfully.
+
