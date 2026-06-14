@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComputeXplain | Interactive Computer Simulators</title>
+  <meta name="description" content="Explore interactive simulators explaining the internet, CPU pipelines, displays, and cache memory hierarchies.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome for sleek modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="app-sidebar">
+      <div class="sidebar-top">
+        <div class="logo-container">
+          <div class="logo-icon">C</div>
+          <div>
+            <h1 class="logo-text">ComputeXplain</h1>
+            <div class="logo-sub">Visual Hardware Simulators</div>
+          </div>
+        </div>
+        
+        <nav class="nav-menu">
+          <div class="nav-item active" id="nav-dashboard" data-tab="dashboard">
+            <i class="fa-solid fa-chart-line nav-icon"></i>
+            <span>Dashboard</span>
+          </div>
+          <div class="nav-item" id="nav-network" data-tab="network">
+            <i class="fa-solid fa-circle-nodes nav-icon"></i>
+            <span>Network Packet Router</span>
+          </div>
+          <div class="nav-item" id="nav-cpu" data-tab="cpu">
+            <i class="fa-solid fa-microchip nav-icon"></i>
+            <span>CPU ALU & Pipeline</span>
+          </div>
+          <div class="nav-item" id="nav-pixel" data-tab="pixel">
+            <i class="fa-solid fa-border-all nav-icon"></i>
+            <span>Pixel & Screen Raster</span>
+          </div>
+          <div class="nav-item" id="nav-cache" data-tab="cache">
+            <i class="fa-solid fa-server nav-icon"></i>
+            <span>Cache Hierarchy</span>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="sidebar-footer">
+        <div>v1.0.0 Stable</div>
+        <div>System Online</div>
+      </div>
+    </aside>
+
+    <!-- Main Display Section -->
+    <main class="main-display">
+      
+      <!-- Top Dashboard Header -->
+      <header class="dashboard-header">
+        <h2 class="header-title" id="current-tab-title">System Dashboard</h2>
+        <div class="header-controls">
+          <span class="sys-time" id="system-time">00:00:00 UT</span>
+          <button class="btn" id="btn-clear-logs" title="Clear Console Log">
+            <i class="fa-solid fa-trash"></i> Clear Logs
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Dynamic Content Wrapper -->
+      <div class="content-area" id="main-content">
+        
+        <!-- ================= DASHBOARD HOME TAB ================= -->
+        <section id="tab-dashboard" class="tab-content">
+          <div class="glass-panel" style="margin-bottom: 24px;">
+            <h2 style="font-family: var(--font-display); font-size: 24px; margin-bottom: 12px; background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+              Welcome to ComputeXplain
+            </h2>
+            <p style="color: var(--text-secondary); line-height: 1.6; font-size: 15px;">
+              Computers do millions of operations every split second that we take for granted. This project breaks down 
+              those invisible daily processes into high-fidelity, interactive, visual simulators. Explore network routing, CPU pipelines, subpixel display grids, and cache memory pipelines.
+            </p>
+          </div>
+
+          <div class="dashboard-welcome">
+            <!-- Network Card -->
+            <div class="welcome-card net" data-target="network">
+              <div class="welcome-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+              <h3 class="welcome-title">Network Packet Router</h3>
+              <p class="welcome-desc">Watch how data is chopped into TCP packets, resolved via DNS layers, and routed dynamically across an active internet pathfinder graph.</p>
+            </div>
+            <!-- CPU Card -->
+            <div class="welcome-card cpu" data-target="cpu">
+              <div class="welcome-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3 class="welcome-title">CPU ALU & Pipeline</h3>
+              <p class="welcome-desc">Execute instruction cycles manually or in auto mode. Watch bits travel through registers, program counters, and mathematical logic gates in real-time.</p>
+            </div>
+            <!-- Pixel Card -->
+            <div class="welcome-card pixel" data-target="pixel">
+              <div class="welcome-icon"><i class="fa-solid fa-border-all"></i></div>
+              <h3 class="welcome-title">Pixel & Screen Raster</h3>
+              <p class="welcome-desc">Draw on a canvas and magnify down to individual RGB subpixel LEDs. Test color-depth compression and watch progressive display sweep lines.</p>
+            </div>
+            <!-- Cache Card -->
+            <div class="welcome-card cache" data-target="cache">
+              <div class="welcome-icon"><i class="fa-solid fa-server"></i></div>
+              <h3 class="welcome-title">Cache Hierarchy</h3>
+              <p class="welcome-desc">Simulate memory requests. Witness latency gaps as addresses search L1, L2, and L3 cache lines before resorting to RAM, maintaining hit/miss graphs.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= NETWORK SIMULATOR TAB ================= -->
+        <section id="tab-network" class="tab-content" style="display: none;">
+          <div class="simulator-layout">
+            <!-- Controls -->
+            <div class="control-panel glass-panel">
+              <h3 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">Network Controls</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Destination URL</label>
+                <input type="text" id="net-dest-url" class="form-input" value="google.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Message Payload</label>
+                <input type="text" id="net-payload" class="form-input" value="HELLO WORLD!">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Packet Drop Rate (<span id="lbl-net-drop">10</span>%)</label>
+                <input type="range" id="net-drop-rate" min="0" max="60" value="10" step="5" style="accent-color: var(--accent-cyan)">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Transmission Speed</label>
+                <select id="net-speed" class="form-select">
+                  <option value="slow">Slow (Diagnostic)</option>
+                  <option value="normal" selected>Normal Speed</option>
+                  <option value="fast">High Bandwidth</option>
+                </select>
+              </div>
+
+              <button class="btn btn-primary" id="btn-net-transmit" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-paper-plane"></i> Transmit Packet
+              </button>
+              
+              <button class="btn" id="btn-net-fail-link" style="width: 100%; justify-content: center; background-color: rgba(248, 113, 113, 0.05); border-color: rgba(248, 113, 113, 0.2); color: var(--accent-red)">
+                <i class="fa-solid fa-bolt-slash"></i> Induce Router Congestion
+              </button>
+            </div>
+            
+            <!-- Visualization -->
+            <div class="visualizer-panel glass-panel" id="net-visualizer-container">
+              <canvas id="net-canvas" width="650" height="420" style="background: rgba(0, 0, 0, 0.2); border-radius: 8px; width: 100%; height: 100%"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CPU SIMULATOR TAB ================= -->
+        <section id="tab-cpu" class="tab-content" style="display: none;">
+          <div class="simulator-layout">
+            <!-- Controls -->
+            <div class="control-panel glass-panel">
+              <h3 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">CPU Pipeline Controls</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Preset Code Program</label>
+                <select id="cpu-program-select" class="form-select">
+                  <option value="fibonacci">Fibonacci Series Calculator</option>
+                  <option value="multiply">Simple Multiplication Loop</option>
+                  <option value="factorial">Factorial Series</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="flex-grow: 1;">
+                <label class="form-label">Assembly instructions</label>
+                <div id="cpu-code-viewer" style="background-color: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 12px; font-family: var(--font-mono); font-size: 12px; overflow-y: auto; height: 120px; line-height: 1.6;">
+                  <!-- Program will load here -->
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Clock speed (<span id="lbl-cpu-hz">2</span> Hz)</label>
+                <input type="range" id="cpu-clock-rate" min="1" max="10" value="2" style="accent-color: var(--accent-purple)">
+              </div>
+
+              <div style="display: flex; gap: 8px;">
+                <button class="btn" id="btn-cpu-step" style="flex: 1; justify-content: center;" title="Step One Stage">
+                  <i class="fa-solid fa-forward-step"></i> Step
+                </button>
+                <button class="btn btn-primary" id="btn-cpu-run" style="flex: 1.5; justify-content: center; background-color: var(--accent-purple); color: #0a0c14;">
+                  <i class="fa-solid fa-play" id="cpu-play-icon"></i> <span id="cpu-play-text">Run</span>
+                </button>
+                <button class="btn" id="btn-cpu-reset" style="flex: 1; justify-content: center;">
+                  <i class="fa-solid fa-rotate-left"></i> Reset
+                </button>
+              </div>
+            </div>
+            
+            <!-- Visualization -->
+            <div class="visualizer-panel glass-panel" id="cpu-visualizer-container" style="padding: 16px;">
+              <!-- Simple SVG representation of Registers, ALU, RAM and BUS -->
+              <svg id="cpu-svg" viewBox="0 0 700 420" style="width: 100%; height: 100%; background: rgba(0,0,0,0.1); border-radius: 8px;"></svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PIXEL SIMULATOR TAB ================= -->
+        <section id="tab-pixel" class="tab-content" style="display: none;">
+          <div class="simulator-layout">
+            <!-- Controls -->
+            <div class="control-panel glass-panel">
+              <h3 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">Pixel Display Controls</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Draw Color</label>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <div class="pixel-color-swatch active" style="background-color: #ff3b30; width: 24px; height: 24px; border-radius: 4px; cursor: pointer; border: 2px solid white;" data-color="#ff3b30"></div>
+                  <div class="pixel-color-swatch" style="background-color: #34c759; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;" data-color="#34c759"></div>
+                  <div class="pixel-color-swatch" style="background-color: #007aff; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;" data-color="#007aff"></div>
+                  <div class="pixel-color-swatch" style="background-color: #ffcc00; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;" data-color="#ffcc00"></div>
+                  <div class="pixel-color-swatch" style="background-color: #af52de; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;" data-color="#af52de"></div>
+                  <div class="pixel-color-swatch" style="background-color: #ffffff; width: 24px; height: 24px; border-radius: 4px; cursor: pointer;" data-color="#ffffff"></div>
+                  <div class="pixel-color-swatch" style="background-color: #000000; width: 24px; height: 24px; border-radius: 4px; cursor: pointer; border: 1px solid var(--border-color);" data-color="#000000"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Display Color Depth</label>
+                <select id="pixel-depth" class="form-select">
+                  <option value="24" selected>24-bit TrueColor (16.7 Million Colors)</option>
+                  <option value="8">8-bit Web Palette (256 Colors)</option>
+                  <option value="4">4-bit Retro (16 Colors)</option>
+                  <option value="1">1-bit Monochrome (Black & White)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Raster Scan Speed</label>
+                <select id="pixel-scan-speed" class="form-select">
+                  <option value="off">Scan Line: Disabled</option>
+                  <option value="slow">Scan Line: Slow Sweep</option>
+                  <option value="fast" selected>Scan Line: Real-Time Refresh</option>
+                </select>
+              </div>
+
+              <div style="display: flex; gap: 8px;">
+                <button class="btn" id="btn-pixel-clear" style="flex: 1; justify-content: center;">
+                  <i class="fa-solid fa-eraser"></i> Clear Screen
+                </button>
+                <button class="btn btn-primary" id="btn-pixel-preset" style="flex: 1.2; justify-content: center; background-color: var(--accent-red); color: #0a0c14;">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> Load Preset Icon
+                </button>
+              </div>
+            </div>
+            
+            <!-- Visualization -->
+            <div class="visualizer-panel glass-panel" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 16px; padding: 16px;">
+              <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid var(--border-color); padding-right: 16px; height: 100%;">
+                <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">Drawing Grid (32x32)</div>
+                <canvas id="pixel-draw-canvas" width="220" height="220" style="background: black; border-radius: 4px; border: 1px solid var(--border-color); cursor: crosshair; image-rendering: pixelated; width: 220px; height: 220px;"></canvas>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">RGB Subpixel Microscope</div>
+                <canvas id="pixel-micro-canvas" width="260" height="220" style="background: #05070c; border-radius: 4px; border: 1px solid var(--border-color); width: 260px; height: 220px;"></canvas>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CACHE SIMULATOR TAB ================= -->
+        <section id="tab-cache" class="tab-content" style="display: none;">
+          <div class="simulator-layout">
+            <!-- Controls -->
+            <div class="control-panel glass-panel">
+              <h3 style="font-family: var(--font-display); font-size: 18px; margin-bottom: 8px;">Cache memory Controls</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Memory Request Type</label>
+                <div style="display: flex; gap: 8px;">
+                  <button class="btn active" id="btn-cache-op-read" style="flex: 1; justify-content: center; border-color: var(--accent-green); color: var(--accent-green);">Read Address</button>
+                  <button class="btn" id="btn-cache-op-write" style="flex: 1; justify-content: center;">Write Address</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Hex Address (0x00 to 0x7F)</label>
+                <input type="text" id="cache-address" class="form-input" value="0x1A" maxlength="4" style="font-family: var(--font-mono);">
+              </div>
+
+              <div class="form-group" id="cache-value-group" style="display: none;">
+                <label class="form-label">Data Value (Hex byte)</label>
+                <input type="text" id="cache-value" class="form-input" value="0xFF" maxlength="4" style="font-family: var(--font-mono);">
+              </div>
+
+              <button class="btn btn-primary" id="btn-cache-execute" style="width: 100%; justify-content: center; background-color: var(--accent-green); color: #0a0c14;">
+                <i class="fa-solid fa-magnifying-glass"></i> Request Cache Transaction
+              </button>
+
+              <button class="btn" id="btn-cache-random" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-shuffle"></i> Run Random Access burst
+              </button>
+
+              <div style="border-top: 1px solid var(--border-color); padding-top: 16px;">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 6px;">
+                  <span>Hits / Misses:</span>
+                  <span id="cache-stat-hits-misses" style="font-family: var(--font-mono); color: var(--text-primary);">0 / 0</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 12px;">
+                  <span>Hit Rate:</span>
+                  <span id="cache-stat-rate" style="font-family: var(--font-mono); color: var(--accent-green);">0%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 12px;">
+                  <span>Average Latency:</span>
+                  <span id="cache-stat-latency" style="font-family: var(--font-mono); color: var(--accent-amber);">0 ns</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Visualization -->
+            <div class="visualizer-panel glass-panel" id="cache-visualizer-container" style="padding: 16px;">
+              <svg id="cache-svg" viewBox="0 0 700 420" style="width: 100%; height: 100%; background: rgba(0,0,0,0.1); border-radius: 8px;"></svg>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Live Terminal Console Log at Bottom -->
+      <footer class="console-panel">
+        <div class="console-header">
+          <span><i class="fa-solid fa-terminal" style="margin-right: 8px;"></i>System Hardware Console Logs</span>
+          <div class="console-controls">
+            <span class="console-dot"></span>
+            <span class="console-dot"></span>
+            <span class="console-dot"></span>
+          </div>
+        </div>
+        <div class="console-body" id="console-logs-list">
+          <div class="console-line sys"><span class="timestamp">[23:00:00]</span>ComputeXplain Hardware Diagnostics initialization complete. Waiting for user input...</div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Loading scripts as ES Modules -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
