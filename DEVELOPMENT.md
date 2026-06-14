@@ -122,3 +122,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Reduced DOM repaints in CPU visualizer.
 - **Status**: Verified & Integrated successfully.
 
+### Log #39: fix(cpu): prevent program counter overflow past RAM limits
+- **Summary**: Checked bound offsets on PC increment.
+- **Status**: Verified & Integrated successfully.
+
