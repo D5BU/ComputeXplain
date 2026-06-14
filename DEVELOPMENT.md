@@ -146,3 +146,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: ALU math signs now light up dynamically.
 - **Status**: Verified & Integrated successfully.
 
+### Log #45: refactor(cpu): unify register state updates under single handler
+- **Summary**: Consolidated ACC, B, and IR register rendering.
+- **Status**: Verified & Integrated successfully.
+
