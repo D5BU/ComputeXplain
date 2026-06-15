@@ -5,6 +5,7 @@ import { initNetworkSim } from './network-sim.js';
 import { initCpuSim } from './cpu-sim.js';
 import { initPixelSim } from './pixel-sim.js';
 import { initCacheSim } from './cache-sim.js';
+import { initAlgoSim } from './algo-sim.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   setupTabs();
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCpuSim(logToConsole);
   initPixelSim(logToConsole);
   initCacheSim(logToConsole);
+  initAlgoSim(logToConsole);
   
   logToConsole('All simulator subsystems online. Ready for diagnostic commands.', 'sys');
 });
@@ -49,7 +51,8 @@ function setupTabs() {
         network: 'Internet Packet Routing Simulator',
         cpu: 'CPU Pipeline & ALU Simulator',
         pixel: 'Pixel Grid & CRT Raster Microscope',
-        cache: 'Memory Cache Hierarchy Simulator'
+        cache: 'Memory Cache Hierarchy Simulator',
+        algo: 'Interactive Algorithm Visualizer'
       };
       currentTitle.textContent = tabNames[targetTab] || 'ComputeXplain';
       

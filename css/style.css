@@ -308,6 +308,7 @@ body {
 .console-line.cpu { color: var(--accent-purple); }
 .console-line.pixel { color: var(--accent-red); }
 .console-line.cache { color: var(--accent-green); }
+.console-line.algo { color: #38bdf8; }
 .console-line.sys { color: var(--text-secondary); }
 
 /* Animation Keyframes */
@@ -467,11 +468,13 @@ body {
 .welcome-card.cpu::before { background: var(--accent-purple); }
 .welcome-card.pixel::before { background: var(--accent-red); }
 .welcome-card.cache::before { background: var(--accent-green); }
+.welcome-card.algo::before { background: var(--accent-cyan); }
 
 .welcome-card.net:hover { border-color: rgba(0, 242, 254, 0.3); box-shadow: 0 0 25px rgba(0, 242, 254, 0.05); }
 .welcome-card.cpu:hover { border-color: rgba(192, 132, 252, 0.3); box-shadow: 0 0 25px rgba(192, 132, 252, 0.05); }
 .welcome-card.pixel:hover { border-color: rgba(248, 113, 113, 0.3); box-shadow: 0 0 25px rgba(248, 113, 113, 0.05); }
 .welcome-card.cache:hover { border-color: rgba(74, 222, 128, 0.3); box-shadow: 0 0 25px rgba(74, 222, 128, 0.05); }
+.welcome-card.algo:hover { border-color: rgba(0, 242, 254, 0.3); box-shadow: 0 0 25px rgba(0, 242, 254, 0.05); }
 
 .welcome-icon {
   font-size: 32px;
@@ -513,4 +516,22 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* Pseudocode Tracker styling */
+.pseudocode-line {
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.1s ease;
+  white-space: pre;
+  color: var(--text-secondary);
+}
+
+.pseudocode-line.highlight {
+  background-color: rgba(0, 242, 254, 0.12);
+  color: var(--accent-cyan);
+  font-weight: 600;
+  border-left: 3px solid var(--accent-cyan);
+  box-shadow: 0 0 8px rgba(0, 242, 254, 0.1);
+  padding-left: 3px;
 }

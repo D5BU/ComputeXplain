@@ -414,3 +414,7 @@ This document tracks the incremental building steps, unit tests, and performance
 - **Summary**: Direct mapped division operations made faster.
 - **Status**: Verified & Integrated successfully.
 
+### Log #112: feat(algo): add interactive algorithm visualizer tab
+- **Summary**: Added step-by-step visualizations for sorting, searching, and pathfinding algorithms with pseudocode line highlighting.
+- **Status**: Verified & Integrated successfully.
+
